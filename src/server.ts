@@ -1,22 +1,18 @@
-import errorHandler from "errorhandler";
+import rp from "request-promise-native";
+import { RequestPromise } from "request-promise-native";
 
-import app from "./app";
+class ScraperService {
+  fetchContributors(url: string): RequestPromise<any> {
+    return rp(url);
+  }
+}
 
-/**
- * Error Handler. Provides full stack - remove for production
- */
-app.use(errorHandler());
+const main = () => {
+  const s = new ScraperService();
+  s.fetchContributors("https://github.com/prysmaticlabs/prysm")
+    .then((res: any) => {
+      console.log(res);
+    });
+};
 
-/**
- * Start Express server.
- */
-const server = app.listen(app.get("port"), () => {
-  console.log(
-    "  App is running at http://localhost:%d in %s mode",
-    app.get("port"),
-    app.get("env")
-  );
-  console.log("  Press CTRL-C to stop\n");
-});
-
-export default server;
+main();
