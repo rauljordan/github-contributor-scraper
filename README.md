@@ -1,9 +1,15 @@
 # Github Contributor Scraper
 
-Clone the repository
+Clone the repository:
 
 ```
 git clone https://github.com/rauljordan/github-contributor-scraper && cd github-contributor-scraper
+```
+
+Install Node.js for your computer:
+
+```
+https://nodejs.org/en/
 ```
 
 Install the dependencies:
