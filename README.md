@@ -1,9 +1,9 @@
-# Github Contributor Fetcher
+# Github Contributor Scraper
 
 Clone the repository
 
 ```
-git clone https://github.com/rauljordan/github-contributors && cd github-contributors
+git clone https://github.com/rauljordan/github-contributor-scraper && cd github-contributor-scraper
 ```
 
 Install the dependencies:
