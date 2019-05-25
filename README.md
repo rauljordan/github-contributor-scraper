@@ -13,7 +13,7 @@ npm install -g yarn
 yarn install
 ```
 
-Run the tool, by passing in a github repository url and select the path to the output csv files:
+Run the tool, by passing in a github repository url:
 
 ```
 npm run build && npm start --repo https://github.com/paritytech/parity-ethereum
